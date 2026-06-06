@@ -15,44 +15,63 @@ dataset = version.download("yolov8")
 
 Below is the side-by-side training performance metrics for **AdamW**, **RMSProp**, and **SGD** across 50 epochs. 
 
-| AdamW Results | RMSProp Results | SGD Results |
-| :---: | :---: | :---: |
-| ![](models/AdamW/results.png) | ![](models/RMSProp/results.png) | ![](models/SGD/results.png) |
+## Model Performance & Optimizer Comparison
 
-### Model Performance 
-<table border="0">
+<table border="0" width="100%">
+<!-- Row 1: Training Curves Images -->
 <tr>
-<th valign="top">
+<td align="center" valign="top" width="33%">
+<strong>AdamW Training Curves</strong><br><br>
+<img src="models/AdamW/results.png" alt="AdamW Results" width="100%">
+</td>
+<td align="center" valign="top" width="33%">
+<strong>RMSProp Training Curves</strong><br><br>
+<img src="models/RMSProp/results.png" alt="RMSProp Results" width="100%">
+</td>
+<td align="center" valign="top" width="33%">
+<strong>SGD Training Curves</strong><br><br>
+<img src="models/SGD/results.png" alt="SGD Results" width="100%">
+</td>
+</tr>
+
+<!-- Row 2: Numerical Metric Tables -->
+<tr>
+<td valign="top">
 
 
-| AdamW Results | Value |
+| Metric | Value |
 | :--- | :---: |
 | Precision | 0.8588 |
 | Recall | 0.8513 |
 | mAP@50 | 0.8948 |
 | mAP@50-95 | 0.6118 |
 
-</th>
-<th valign="top">
+</td>
+<td valign="top">
 
 
-| RMSProp Results | Value |
+| Metric | Value |
 | :--- | :---: |
 | Precision | 0.9138 |
 | Recall | 0.8795 |
 | mAP@50 | 0.9140 |
 | mAP@50-95 | 0.6388 |
 
-</th>
-<th valign="top">
+</td>
+<td valign="top">
 
 
-| SGD Results | Value |
+| Metric | Value |
 | :--- | :---: |
 | Precision | 0.9211 |
 | Recall | 0.8782 |
 | mAP@50 | 0.9135 |
 | mAP@50-95 | 0.6429 |
+
+</td>
+</tr>
+</table>
+
 
 </th>
 </tr>
